@@ -14,3 +14,48 @@ body{
     font-family: 'Headland One', serif;
     
 }
+
+.main{
+    text-align: center;
+}
+
+.square{
+    width: 200px;
+    height: 200px;
+    background-color: #5FD068;
+    border: 1px solid #0CA291;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+.o{
+    position: relative;
+}
+
+.o:after{
+    position: absolute;
+    content: "\26AB";
+    font-size: 100px;
+    line-height: 200px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+}
+
+.x{
+    position: relative;
+}
+
+.x:after{
+    position: absolute;
+    content: "\274C";
+    font-size: 100px;
+    line-height: 200px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+}
