@@ -1,7 +1,8 @@
-let board = ['', '', '', '', '', '', '', '', ''];
+let board = ["", "", "", "", "", "", "", "", ""];
 let playerTime = 0;
-let symbols = ['o', 'x'];
+let symbols = ["o", "x"];
 let gameOver = false;
+
 
 function handleMove(position) {
 
@@ -9,7 +10,7 @@ function handleMove(position) {
         return;
     }
 
-    if (board[position] == '') {
+    if (board[position] == "") {
         board[position] = symbols[playerTime]
 
         gameOver = isWin();
@@ -51,12 +52,20 @@ function isWin() {
 
         if (board[pos1] == board[pos2] &&
             board[pos1] == board[pos3] &&
-            board[pos1] != ''){
+            board[pos1] != ""){
 
             return true;
         }
     }
 
     return false;
+}
+
+function restartGame() {
+    // reiniciar as variáveis
+    let board = ["", "", "", "", "", "", "", "", ""];
+    let playerTime = 0;
+    let symbols = ["o", "x"];
+    let gameOver = false;    
 }
 
