@@ -15,7 +15,7 @@ function handleClick(event){
     let position = square.id;
 
     if (handleMove(position)) {
-        result.innerText = ("O jogo acabou.")
+        result.innerText = ("O jogo acabou - O Vencedor foi " + playerTime)
     }
     updateSquares();
 }
