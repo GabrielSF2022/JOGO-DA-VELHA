@@ -9,11 +9,14 @@ document.addEventListener('DOMContentLoaded', () => {
 })
 
 function handleClick(event){
+    let result = document.getElementById('result');
     
     let square = event.target;
     let position = square.id;
 
-    handleMove(position);
+    if (handleMove(position)) {
+        result.innerText = ("O jogo acabou.")
+    }
     updateSquares();
 }
 
