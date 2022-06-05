@@ -12,32 +12,58 @@
     <link href="https://fonts.googleapis.com/css2?family=Headland+One&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <div class="header">
-        <h1 class="title">JOGO DA VELHA</h1>
-    </div>
-
+    
     <main class="main">
-        <div>
-            <div id="0" class="square"></div>
-            <div id="1" class="square"></div>
-            <div id="2" class="square"></div>
+
+        <h1 class="title">JOGO DA VELHA</h1>
+        
+        <div class="container">
+            <div class="players">
+                <h1>Jogadores</h1>
+                <div class="player_container">
+                    <img id="noughtIcon" src="./src/images/circle-image.png">
+                    <input id="player1" type="text" placeholder="Jogador 1">
+                </div>
+                <div class="player_container">
+                    <img id="crossIcon" src="./src/images/x-image.png">
+                    <input id="player2" type="text" placeholder="Jogador 2">
+                </div>
+            </div>
         </div>
 
-        <div>
-            <div id="3" class="square"></div>
-            <div id="4" class="square"></div>
-            <div id="5" class="square"></div>
+        <div class="numberOfWins">
+            <h1>Pontuação</h1>
+            <h2 id="player1Wins"></h2>
+            <h2 id="player2Wins"></h2>
         </div>
 
-        <div>
-            <div id="6" class="square"></div>
-            <div id="7" class="square"></div>
-            <div id="8" class="square"></div>
+        
+        
+        <div class="container-game">
+            <div>
+                <div id="0" class="square"></div>
+                <div id="1" class="square"></div>
+                <div id="2" class="square"></div>
+            </div>
+
+            <div>
+                <div id="3" class="square"></div>
+                <div id="4" class="square"></div>
+                <div id="5" class="square"></div>
+            </div>
+
+            <div>
+                <div id="6" class="square"></div>
+                <div id="7" class="square"></div>
+                <div id="8" class="square"></div>
+            </div>
         </div>
+
+
         <button id="btnRestart" onclick="restartGame()"> Reiniciar jogo</button>
+        <button id="btnRestartWins" onclick="restartWins()"> Resetar pontuação</button>
 
-        <h2 id="result"></h2>
+        <h3 id="result"></h3>
     </main>
     
     <script src="./src/js/game.js"></script>
